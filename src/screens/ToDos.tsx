@@ -51,7 +51,6 @@ const ToDos: FunctionComponent = () => {
 
   const onToDoDelete = useCallback(
     (id: string) => {
-      console.log(id);
       dispatch(deleteToDo(id));
     },
     [dispatch],

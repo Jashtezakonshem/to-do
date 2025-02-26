@@ -10,7 +10,6 @@ const toDosSlice = createSlice({
   reducers: {
     addToDo: (state, { payload }) => {
       const id = uuid.v4();
-      console.log(state);
       state.push({
         id,
         text: payload,
