@@ -19,7 +19,8 @@ yarn
 ```sh
 yarn ios
 ```
-
+Please be aware that the first time you run the app, Expo Go won't find app.
+In your console you should see a QRcode or a link to open the app in Expo Go. (exp://)
 ## Features
 - Add tasks
 - Mark tasks as completed
