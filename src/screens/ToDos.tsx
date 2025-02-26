@@ -56,12 +56,13 @@ const ToDos: FunctionComponent = () => {
           <AntDesign name="pluscircle" size={32} color={Colors.secondary} />
         </Pressable>
       </View>
-      <FlatList
-        data={todos}
-        renderItem={renderToDo}
-        keyExtractor={(toDO: ToDo) => toDO.id}
-        contentContainerStyle={styles.toDosContainer}
-      />
+      <View style={styles.toDosContainer}>
+        <FlatList
+          data={todos}
+          renderItem={renderToDo}
+          keyExtractor={(toDO: ToDo) => toDO.id}
+        />
+      </View>
     </View>
   );
 };
@@ -91,6 +92,7 @@ const styles = StyleSheet.create({
   },
   toDosContainer: {
     flex: 1,
+    flexGrow: 1,
     margin: 16,
     borderRadius: 8,
     backgroundColor: Colors.light,
